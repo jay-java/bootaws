@@ -1,0 +1,5 @@
+package com.jsp.repo;
+
+public interface UserRepo {
+
+}

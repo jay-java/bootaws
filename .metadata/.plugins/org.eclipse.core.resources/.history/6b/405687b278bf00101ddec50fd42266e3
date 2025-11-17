@@ -1,0 +1,22 @@
+package com.api.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.api.model.User;
+import com.api.repo.UserRepo;
+
+@Service
+public class UserService {
+
+	private UserRepo repo;
+
+	public List<User> fetchAllUser() {
+		return (List<User>) this.repo.findAll();
+	}
+
+	public User addUser(User u) {
+		return this.repo.save(u);
+	}
+}

@@ -1,0 +1,27 @@
+package com.jsp.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.jsp.model.User;
+import com.jsp.service.UserService;
+
+@Controller
+public class UserController {
+
+	@Autowired
+	private UserService service;
+
+	@RequestMapping("/")
+	public String register() {
+		return "register";
+	}
+
+	@RequestMapping("/adduser")
+	public String addUser(@ModelAttribute User u) {
+
+		return "home";
+	}
+}

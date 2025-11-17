@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.aop.HelperClass&apos; to &apos;AppConfiguration&apos;&#x0D;&#x0A;- Original project: &apos;SpringAOPDemo&apos;&#x0D;&#x0A;- Original element: &apos;com.aop.HelperClass&apos;&#x0D;&#x0A;- Renamed element: &apos;com.aop.AppConfiguration&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;HelperClass&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.aop{HelperClass.java[HelperClass" matchStrategy="1" name="AppConfiguration" qualified="false" references="true" similarDeclarations="false" stamp="1750936250241" textual="false" version="1.0"/>
+</session>

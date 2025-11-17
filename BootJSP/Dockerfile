@@ -1,0 +1,3 @@
+FROM openjdk:8
+
+ADD target/BootJSP-0.0.1-SNAPSHOT.war

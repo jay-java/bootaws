@@ -1,0 +1,25 @@
+package com.api.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.api.model.User;
+import com.api.repo.UserRepo;
+import com.api.service.UserService;
+
+@RestController
+public class UserController {
+
+	private UserService service;
+	
+	@GetMapping("/")
+	public void getAllUser() {
+		this.service.fetchAllUser();
+	}
+	
+	@PostMapping
+	public User addNewUser(User u) {
+		return this.service.addUser(u);
+	}
+}
